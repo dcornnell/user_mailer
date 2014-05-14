@@ -9,12 +9,13 @@ $("#new_user").submit(function(){
 
 if ((input.val() == "") || (input.val() == emptyerror)) {
 
-	input.addClass(".needsfilled");
+	input.addClass("needsFilled");
 	input.val(emptyerror);
+
 	isValid = false;
 
 } else {
-input.removeClass(" .needsFilled ");
+input.removeClass(" needsFilled ");
 	isValid = true;
 }
 }
