@@ -43,3 +43,32 @@ $(".div4").click(function(){
 
 
 
+$('.panel').on('click', function(){
+  var user_id = $(this).attr('data-user-id');
+  var panel = $(this);
+
+
+  $.ajax({
+    url: "/users/" + user_id,
+    type: "DELETE",
+    data:{
+
+    },
+    success: function(data){
+      console.log(data);  
+        if (data == "1") {
+          console.log("true");
+          $(panel).hide("slow");
+        }
+        else {
+          console.log("false");
+          
+        }
+      }
+
+  })
+
+});
+
+
+
