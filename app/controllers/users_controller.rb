@@ -4,6 +4,10 @@ class UsersController < ApplicationController
 
 	end
 
+	def show
+		@user = User.find(params[:id])
+	end
+
 	def new
 		@new_user = User.new
 	end
@@ -13,7 +17,7 @@ class UsersController < ApplicationController
 		if @new_user.save
 			redirect_to login_path
 		else
-			render new_user_path
+			render :new
 		end
 	end
 

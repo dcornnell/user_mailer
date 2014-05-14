@@ -1,0 +1,72 @@
+#error {
+	color:red;
+	font-size:10px;
+	display:none;
+}
+
+.needsFilled {
+	background:red !important; 
+	color:white! important;
+}
+
+.invisable {
+	display:none;
+	color:blue;
+
+}.visable {
+	display:inline;
+	color:blue;
+}
+
+.div1 {
+	background:#ff0000!important;
+	display:none;
+	text-align:center;
+	padding: 20px;
+	margin: 10px;
+}
+
+.div2 {
+	background:#ff4040 !important;
+	display:none;
+	text-align:center;
+	padding: 20px;
+	margin: 10px;
+}
+
+.div3 {
+	background:#ff7373 !important;
+	display:none;
+	text-align:center;
+	padding: 20px;
+	margin: 10px;
+}
+
+
+
+.div4 {
+	text-align:center;
+	padding: 20px;
+	margin: 10px;
+}
+
+#login,#flip{
+	display:none;
+
+}
+
+#login {
+	
+	text-align:center;
+	padding: 20px;
+	margin: 10px;
+}
+
+.loginClicker {
+	text-align:center;
+}
+
+.xOut {
+	text-align:center;
+}
+

@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 		user = User.find_by_email(params[:email]).try(:authenticate, params[:password])
 		if user
 			session[:user_id] = user.id
-			redirect_to users_path
+			redirect_to user_path(user.id)
 		else
 			render :new
 		end

@@ -1,4 +1,4 @@
-wrequire 'spec_helper.rb'
+require 'spec_helper.rb'
 
 describe UsersController do
 	describe 'Get #index'

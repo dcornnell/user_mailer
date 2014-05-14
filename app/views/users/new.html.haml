@@ -7,16 +7,24 @@
 				%li.bullet-item Name
 				%li
 					= f.text_field :name
+					%small.invisable
 				%li.bullet-item Email
 				%li
 					= f.email_field :email
+					%small.invisable
 				%li.bullet-item Password
 				%li
 					= f.password_field :password
+					%small.invisable Please fill this in
 				%li
 				%li.bullet-item Confirm Password
 				%li
 					= f.password_field :password_confirmation
+					%small.invisable Please fill this in
 				%li.cta-button
 					= f.submit "Create new User", class: "button"
 
+
+
+
+		
