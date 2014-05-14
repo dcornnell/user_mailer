@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
 	def check_destroyable
 		if self.destroyable == true
 			return true
+		elsif self.destroyable == nil
+			return false
 		else
 			return false
 		end
