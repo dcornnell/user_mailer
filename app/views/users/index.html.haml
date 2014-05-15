@@ -32,11 +32,19 @@
 		%b DONT Click on them it deletes them for ever!
 	%br
 	%ul{class: "small-block-grid-4"}
+		
 		- @users.each do |u|
 			%li
+				
 				.panel{"data-user-id" => u.id}
+					
+
 					=u.name
-					%br
+					
+					
+			
+
+
 					
 
 

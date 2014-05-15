@@ -62,6 +62,10 @@ $('.panel').on('click', function(){
         }
         else {
           console.log("false");
+          alert("Im invincible!")
+          $(panel).addClass("callout")
+          
+
           
         }
       }
