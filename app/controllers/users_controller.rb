@@ -6,6 +6,11 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
+		@days = @user.days_around
+		if @days > 10
+			@user.make_industructable
+			@user.save
+		end
 	end
 
 	def new

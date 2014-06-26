@@ -6,7 +6,16 @@ class User < ActiveRecord::Base
 	after_create :send_new_user
 	before_destroy :check_destroyable
 
+	def days_around
+		(Date.today.to_date - self.created_at.to_date).to_i
+	end
 
+	def make_industructable
+		self.destroyable = false
+
+	end
+
+	
 	def check_destroyable
 		if self.destroyable == true
 			return true
